@@ -1,4 +1,4 @@
-
+﻿
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -401,6 +401,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 
 							<div class="styled-input">
+								<font size="4" color="white">請問您和新人關係？</font>
+								<br/>
+								<input type="radio" name="relation" value="1" required>
+								<font size="3" color="white">男方親友</font>
+								
+								<input type="radio" name="relation" value="2" required>
+								<font size="3" color="white">女方親友</font>
+							</div>
+
+							<div class="styled-input">
 								<font size="4" color="white">請問您是否需要喜帖？</font>
 								<br/>
 								<input type="radio" name="RDaddress" value="1" onchange="RDaddressFunction();" checked>
@@ -587,7 +597,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			document.getElementById('count_person').required = false;
 		}
 	}
-		function RDaddressFunction() {
+	function RDaddressFunction() {
 		if ($("input[name='RDaddress']")[0].checked==true || $("input[name='RDaddress']")[2].checked==true){
 			document.getElementById("address").style.display="block";
 			document.getElementById('address').required = true;
@@ -605,9 +615,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	}
 	</script>
 
+	<!-- 引入 firestore 函式庫 -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+	
 	<script src="js/invitationReply.js"></script>
-	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script
-
+	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </body>
 
 
