@@ -31,7 +31,7 @@
 		(function tick(){
 			dt = new Date();
 			// Time left
-			left = Math.floor((new Date(2020,05,01,18,30) - (new Date(dt.getFullYear(),dt.getMonth()+1,dt.getDate(),dt.getHours(),dt.getMinutes(),dt.getSeconds()))) / 1000);
+			left = Math.floor((new Date(2020,05,01,18,30) - (new Date(dt.getFullYear(),dt.getMonth()+1,dt.getDate()+1,dt.getHours(),dt.getMinutes(),dt.getSeconds()))) / 1000);
 			
 			if(left < 0){
 				left = 0;
